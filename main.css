@@ -1,0 +1,371 @@
+body{
+    width: 100vw;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.top{
+    height: 100vh;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    padding: 20px;
+    background-color: #272727;
+}
+
+.hamburger{
+    display: none;
+}
+
+.home img{
+    margin-left: 160px;
+}
+
+.nav a{
+    margin: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.nav a:hover{
+    border-bottom: #ffffff 1px solid;
+    border-top: #ffffff 1px solid;
+}
+
+.home .nav{
+    margin-right: 100px;
+}
+
+.nav{
+    width: 600px;
+}
+
+.nav button{
+    display: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 100px;
+    margin-right: 200px;
+    box-shadow: 1px 1px 10px #1111114f;
+}
+.text{
+    width: 80vh;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 200px;
+}
+
+.text h1{
+    color: #333333;
+    font-size: 50px;
+    font-weight: bold;
+}
+.text h2{
+    color: #333333;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.text a{
+    text-decoration: none;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    border: none;
+    box-shadow: #1111111c 1px 1px 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about{
+    margin: 100px;
+    margin-left: 200px;
+}
+
+.about h1{
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about h2{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 100    ;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    transition: .5s;
+}
+
+.link a:hover{
+    box-shadow: #1111111c 1px 1px 5px;
+    border-radius: 15px;
+}
+
+.projects{
+    width: 100vw;
+    height: 100vh;
+}
+
+.projects h1{
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px;
+    margin-left: 200px;
+}
+
+.pcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.pcontent label{
+    color: #333333;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.procont{
+    box-shadow: #1111111c 1px 1px 5px;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.procont:hover{
+    transform: scale(1.01);
+    box-shadow: #1111111c 1px 1px 10px;
+}
+
+.pcontent img{
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.pcontent h2{
+    font-size: 18px;
+    font-weight: 100;
+    color: #333333;
+}
+
+
+
+@media (max-width: 767px) {
+    .top{
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .home{
+        width: 100vw;
+        height: 30px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .home img{
+        margin-left: 0px;
+        height: 90px;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    #menubar{
+        background: transparent;
+        border: none;
+    }
+    
+    #menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: #1111111c 1px 1px 10px;
+        padding: 30px;
+    }
+
+    .nav a{
+        margin: 0px;
+        padding: 5px;
+        text-decoration: none;
+        color: #333333;
+    }
+    
+    .home .nav{
+        margin-right: 100px;
+    }
+    
+    .nav{
+        width: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .nav button{
+        display: block;
+    }
+
+    .nav button{
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        width: 100px;
+    }
+
+    .content img{
+        margin-bottom: 80vw;
+        margin-right: 60vw;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px #1111111f;
+    }
+
+    .text{
+        width: 80vh;
+        padding: 0;
+        margin: 0px;
+        margin-left: 30px;
+    }
+    
+    .text h1{
+        color: #333333;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 20vw;
+    }
+    .text h2{
+        color: #333333;
+        font-size: 16px;
+        font-weight: 100;
+    }
+    
+    .text a{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .about{
+        margin: 5px;
+        margin-left: 0px;
+    }
+    
+    .about h1{
+        color: #333333;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    
+    .about h2{
+        color: #333333;
+        font-size: 16px;
+        font-weight: 100;
+        margin-left: 30px;
+    }
+
+    .about a img{
+        height: 35px;
+    }
+
+    .projects{
+        margin-top: 40vw;
+        width: 100vw;
+    }
+    
+    .projects h1{
+        color: #333333;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 5px;
+        margin-left: 30px;
+    }
+    
+    .pcontent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+    .pcontent label{
+        color: #333333;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .procont{
+        box-shadow: #1111111c 1px 1px 5px;
+        margin: 10px;
+        width: 250px;
+        height: 400px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: .5s;
+    }
+    
+    .procont:hover{
+        transform: scale(1.01);
+        box-shadow: #1111111c 1px 1px 10px;
+    }
+    
+    .pcontent img{
+        height: 150px;
+        width: 250px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .pcontent h2{
+        font-size: 18px;
+        font-weight: 100;
+        color: #333333;
+    }
+
+
+}
