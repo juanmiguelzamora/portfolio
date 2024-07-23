@@ -3,11 +3,10 @@ body{
     margin: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Poppins", sans-serif;
 }
 
-.top{
-    height: 100vh;
-}
 .home{
     display: flex;
     align-items: center;
@@ -79,15 +78,14 @@ body{
 .text h2{
     color: #333333;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .text a{
     text-decoration: none;
     padding: 15px;
-    color: #ffffff;
-    background-color: #333333;
-    border: none;
+    color: #333333;
+    border: 1px solid #333333;
     box-shadow: #1111111c 1px 1px 5px;
     border-radius: 10px;
     font-size: 16px;
@@ -108,7 +106,7 @@ body{
 .about h2{
     color: #333333;
     font-size: 20px;
-    font-weight: 100    ;
+    font-weight: 400    ;
 }
 
 .link{
@@ -157,10 +155,10 @@ body{
 }
 
 .procont{
-    box-shadow: #1111111c 1px 1px 5px;
+    box-shadow: #1111111c 1px 1px 5px, #ffffffad -1px -1px 5px;
     margin: 10px;
     width: 400px;
-    height: 400px;
+    height: 500px;
     padding: 30px;
     border-radius: 20px;
     cursor: pointer;
@@ -170,7 +168,7 @@ body{
 
 .procont:hover{
     transform: scale(1.01);
-    box-shadow: #1111111c 1px 1px 10px;
+    box-shadow: #1111111c 1px 1px 10px, #ffffffbd -1px -1px 10px;
 }
 
 .pcontent img{
@@ -180,7 +178,7 @@ body{
 }
 .pcontent h2{
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
     color: #333333;
 }
 
@@ -189,6 +187,7 @@ body{
 @media (max-width: 767px) {
     .top{
         overflow-x: hidden;
+        overflow-y: scroll;
         margin: 0;
     }
     .home{
@@ -215,6 +214,7 @@ body{
     }
     
     #menu{
+        display: none;
         position: absolute;
         top: 0;
         right: 0;
@@ -253,12 +253,13 @@ body{
     }
 
     .content img{
-        margin-bottom: 80vw;
-        margin-right: 60vw;
+        position: absolute;
+        left: 43%;
         height: 100px;
         width: 100px;
         border-radius: 50%;
         box-shadow: 1px 1px 10px #1111111f;
+        z-index: -1;
     }
 
     .text{
@@ -266,6 +267,8 @@ body{
         padding: 0;
         margin: 0px;
         margin-left: 30px;
+        margin-right: 150px;
+        margin-bottom: 50px;
     }
     
     .text h1{
@@ -277,7 +280,7 @@ body{
     .text h2{
         color: #333333;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 400;
     }
     
     .text a{
@@ -285,7 +288,7 @@ body{
         padding: 10px;
         border-radius: 10px;
         font-size: 12px;
-        font-weight: 100;
+        font-weight: 500;
     }
 
     .about{
@@ -303,7 +306,7 @@ body{
     .about h2{
         color: #333333;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 400;
         margin-left: 30px;
     }
 
@@ -342,8 +345,8 @@ body{
         box-shadow: #1111111c 1px 1px 5px;
         margin: 10px;
         width: 250px;
-        height: 400px;
-        padding: 10px;
+        height: 500px;
+        padding: 20px;
         border-radius: 20px;
         cursor: pointer;
         text-decoration: none;
@@ -363,7 +366,7 @@ body{
     }
     .pcontent h2{
         font-size: 18px;
-        font-weight: 100;
+        font-weight: 400;
         color: #333333;
     }
 
